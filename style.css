@@ -89,7 +89,8 @@ body {
 }
 
 .container-main {
-    color: rgb(38, 140, 1);
+    /* color: rgb(38, 140, 1); */
+    color: #00ff00;
     margin: 10% 10% 5% 10%;
     /* font-family: "Lucida Console", "Courier New"; */
     font-family:"Chakra Petch", "Handjet", "Pixelify Sans", "Courier New";
@@ -183,7 +184,7 @@ body {
 }
 
 .social-link {
-  margin-left: 20%;
+  /* margin-left: 20%; */
   margin-top: 20vmin;
   display: none;
   height: calc(20% - 100px);
@@ -198,6 +199,14 @@ body {
 }
 .social-link button a {
 color: rgb(38, 140, 1);
+}
+
+.phone-number, .email-adress {
+  display: none;
+}    
+.phone:hover + .phone-number, 
+.email:hover + .email-adress{
+  display: block;
 }
 
 
