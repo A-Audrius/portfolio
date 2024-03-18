@@ -3,14 +3,13 @@
 
 
 
-
+  //  TYPEWRITER
 var greeting = 'Sveiki,';
 const username = "aš Audrius Adomavičius";
 const pro = 'frontend wordpress programuotojas';
 var cursor = document.createElement('div');
 
 
-// document.body.appendChild(cursor);
 
 let i = 0;
 function typeWriter() {
@@ -57,97 +56,28 @@ function typeWriter3() {
 
 
 
-
-// KITAS
-
-
-// const div = document.querySelector(".username");
-// // const username = document.querySelector('.username')
-
-
-// function textTypingEffect(element, username,  j = 0) {
-//     if (j === 0) {
-//         element.textContent = "";
-//     }
-//     element.textContent += username[j] ;
-   
-//     if (j === username.length - 1) {
-//         typing = "";
-//             return;
-//         }
-//     //       if ( j === 20) {
-//     //     textTypingEffect(div3, pro);
-//     //    } 
-//         setTimeout(() => textTypingEffect(element, username, j + 1), 200)  
-//     }
-//     textTypingEffect(div, username);
-
-
-
-
-// function textTypingEffect(element, pro,  k = 0) {
-//     if (k === 0) {
-//         element.textContent = "";
-//     }
-//     element.textContent += pro[k] ;
-
-//     if (k === pro.length - 1) {
-//         typing = "";
-//             return;
-//         }
-//         setTimeout(() => textTypingEffect(element, pro, k + 1), 160)  
-//     }
-
-    // let p;
-// function t5() {
-
-//     // let out = '';
-//     for ( let p = 0; p <= 3; p++ ){
-//          if ( p === 0) {
-//             typeWriter();
-//            } 
-//         //    if ( p === 1) {
-//         //     typeWriter2();
-//         //    }   
-  
-//     } 
-   
-    // document.querySelector('.out-5').innerHTML = out;
-// }
-
-// t5();
-
-
+    // DELAY
      $(document).ready(function(){
-
- 
-        $(".vertical-line, .description, .btn, .language, .about-work, .social-link, .right-side, .about-mobile, .work-mobile").delay(500).fadeIn(14000);
-        // $(".description").css({"color": "yellow"}).delay(500).fadeIn(14000);
-
-        // $(".horizontal-line").addClass("@media only screen and (max-width: 992px)").delay(500).fadeIn(14000);
+        $(".vertical-line, .description, .btn, .language, .about-work, .social-link, .right-side, .about-mobile, .work-mobile").delay(1500).fadeIn(19000);
     });
 
 
 
 
-
-var header = document.querySelector(".about-work");
-var btns = header.getElementsByTagName("p");
-for (var p = 0; p < btns.length; p++) {
-  btns[p].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  if (current.length > 0) { 
-    current[0].className = current[0].className.replace(" active", "");
-  }
-  this.className += " active";
-  });
+// OPEN CLOSE TAB
+function openTab(evt, aboutWork) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  document.getElementById(aboutWork).style.display = "block";
+  evt.currentTarget.className += " active";
 }
-
-
-
-
-
-
  
 
 

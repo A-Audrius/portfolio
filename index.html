@@ -8,9 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;1,300&family=Handjet:wght@300;400&family=Pixelify+Sans&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
@@ -34,59 +32,60 @@
                 <p class="greeting-hello"></p> 
                 <p class="username">  </p>  
                 <p class="profession"></p>  
-            <!-- <div class="cursor" id="cursor"></div> -->
             </div>
         
         </div>
 
                 
 
-
             <div class="about-work">
-                <div class="about">
-                    <p><a href="#about-me">apie mane</a></p>
+                    <button class="about tablinks" onclick="openTab(event, 'about-me')" style="margin-bottom: 10px;">apie mane
+                    </button>
+      
+                    <button class="work tablinks" onclick="openTab(event, 'work')" >mano darbai
+                    </button>  
                 </div>
+ 
 
-                <div class="work">
-                    <p><a href="#work"> mano darbai</a></p>
-                </div>
-            </div>
 
         
             <div class="social-link" style="font-size:24px">
+
                 <button id="social" style="font-size:24px">
                     <a href="https://www.linkedin.com/in/audrius-a-859ab451/" target="_blank">
                     <i  class="fa fa-linkedin"></i></a>
                 </button>
+                
                 <button id="social" style="font-size:24px">
                     <a href="https://github.com/A-Audrius?tab=repositories" target="_blank">
                         <i class="fa fa-github"></i></a>
                 </button>
-                
-                <button class="email" style="font-size:24px">
-                    <i class="fa fa-envelope"></i>
-                </button>
-                    <div class="email-adress">audriusad@gmail.com</div>
-           
-                <button class="phone" style="font-size:24px">
-                        <i class="fa fa-phone phone"></i>
-                </button>
-                    <div class="phone-number">+37065087335</div>
-    
-              
-                
-              
+
+
+                    <div class="contact">
+                        <button  style="font-size:24px">
+                            <i class="fa fa-envelope"></i>
+                        </button>
+                        <div class="contact-content">
+                            <p >audriusad@gmail.com</p>
+                       </div>
+                    </div>
+
+                  <div class="contact">              
+                        <button style="font-size:24px">
+                            <i class="fa fa-phone phone"></i>
+                        </button>
+                        <div class="contact-content">
+                            <p>+37065087335</p>
+                        </div>
+                 </div>
             </div>
-
-           <br>
-                
-
 
     </div>
 
    
 
-<!-- RIGHT-SIDE -->
+    <!-- RIGHT-SIDE -->
     <div class="right-side">
 
       
@@ -94,18 +93,21 @@
       
 
           
-        <!-- </div> -->
+
 
             <div class="description">
                 
-                <div class="about-mobile" style="display: none;"> 
+                <div class="about-mobile tabcontent" id="about-me"  style="display: none;"> 
                     <h3>apie mane</h3>
                 </div>
-                        <p id="about-me">Esu pradedantis programuotojas. Dar 2018m susidomėjau programavimu. 
+                        <p id="about-me">Esu pradedantis programuotojas. Mano domėjimosi sritys: 
+                            javascript frontend ir wordpress. 
+                            <br>
+                            Esu atviras darbo pasiūlymams, kur galėčiau prisidėti prie jūsų vystomų projektų,
+                            tuo pačiu mokytis ir augti. Jei turite įdomių pasiūlymų, atitinkančią mano įgūdžius
+                             ir patirtį, nedvejodami susisiekite su manimi.
                             
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Perspiciatis, illo! Adipisci culpa quo
-                            exercitationem commodi nihil sapiente sint 
+                    
                      
                         </p>
                 
@@ -113,64 +115,47 @@
                             <br>
                             <br>
 
-                <div class="work-mobile" style="display: none;"> 
+                <div class="work-mobile tabcontent" id="work" style="display: none;">
                     <h3> mano darbai</h3>
-                
+                </div> 
          
                         <a class="work-link" href="https://a-audrius.github.io/weather-app/" target="_blank">Weather app</a>
                         <br>
-                            <ul>
+                            <ul class="technologies">
                                 <li>JavaScript</li>
                                 <li>CSS</li>
+                                <li>Bootstrap</li>
                                 <li>API</li>
                             </ul>
 
-                            <br>
+                        <br>
 
                             <a class="work-link" href="https://a-audrius.github.io/Book-shop/" target="_blank">Book shop</a>
                             <br>
-                                <ul>
-                                    <li>JavaScript</li>
-                                    <li>CSS</li>
-                                </ul> 
+                            <ul class="technologies">
+                                <li>JavaScript</li>
+                                <li>CSS</li>
+                            </ul> 
 
-                                <br> 
+                        <br> 
 
                          <a class="work-link" href="https://a-audrius.github.io/memory-game/" target="_blank" >Memory game</a>
                             <br>
-                                <ul>
-                                    <li>JavaScript</li>
-                                    <li>CSS</li>
-                                </ul> 
+                            <ul class="technologies">
+                                <li>JavaScript</li>
+                                <li>CSS</li>
+                            </ul> 
 
           
-                </div>
+                
          
         </div>
     </div>
     
-<!-- </div> -->
 
 
 
 
-
-
-
-
-
-      
-
-
-
-
-
-
-        <!-- <div class="ball"></div>
-        <div class="ball" style="--delay:-12s;--size:0.35;--speed:25s;"></div>
-        <div class="ball" style="--delay:-10s;--size:0.3;--speed:15s;"></div> -->
-        
-      </div>
 
 
 
