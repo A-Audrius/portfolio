@@ -75,7 +75,7 @@ function openTab(evt, aboutWork) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-  document.getElementById(aboutWork).style.display = "block";
+  document.querySelector(aboutWork).style.display = "block";
   evt.currentTarget.className += " active";
 }
  
