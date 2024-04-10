@@ -63,6 +63,8 @@ function typeWriter3() {
 
 
 
+    
+
 // BUTTON, LINK
    document.querySelector(".about").onclick = function () {
      document.querySelector('.about').style.color = "var(--green-2)";
