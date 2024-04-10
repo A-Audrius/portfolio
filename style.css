@@ -14,15 +14,6 @@ body {
 }
 
 
-/* .glow-container {
-  overflow-x:hidden;
-  overflow-y: hidden;
-  position:fixed;
-  
-  width:100%;
-  
-} */
-
 :root {
   --dark: #0d0d0d;
   --green-1: rgb(38, 140, 1);
@@ -31,21 +22,13 @@ body {
 
 
 
-#language {
-  color: rgb(38, 140, 1);
-  display: flex;
-  margin-left: 20%;
-  justify-content: center;
-}
-
 .container-main {
     color: var(--green-1);
-    margin: 10% 10% 5% 10%;
+    margin: 5% 10% 0 10%;
     /* font-family: "Lucida Console", "Courier New"; */
     font-family:"Chakra Petch", "Handjet", "Pixelify Sans", "Courier New";
     /* font-family: monospace; */
     display: flex;
-   height: auto;
 }
 .left-side {
     width: 50%;
@@ -64,7 +47,7 @@ body {
   font-size: 35px;
 }
 
-.username {
+.name-lastname {
   font-size: 35px;
   display: flex;
   width: auto;
@@ -72,20 +55,18 @@ body {
 }
 .about-work {
   display: none;
-  margin-top: 15%; 
+  margin-top: 20%; 
 }
  .tablinks:hover{
     color: var(--green-2);
-  
 }
 .work-link {
   color: var(--green-2);
   text-decoration: none;
   border-bottom: 1px dashed;
 }
-.about-mobile, .work-mobile {
-  visibility: hidden;
-  
+.about-me, .my-work {
+  visibility: hidden; 
 }
 .about, .work {
   border: none;
@@ -94,11 +75,6 @@ body {
   font-size: 18px;
   display: flex;
   background-color: transparent; 
-
-}
-.about-work button.active {
-  color: var(--green-2);
-  font-size: 25px;
 }
 .technologies {
   color: var(--green-1);
@@ -169,7 +145,7 @@ color: var(--green-1);
 .right-side {
   width: 50%;
   display: none;
-  margin:0 8% 5% 3% ;
+  margin:5% 8% 5% 0 ;
   align-items: center; 
   display: flex;
 }
@@ -186,11 +162,12 @@ color: var(--green-1);
   margin-top: 20%;
   justify-content: center;
   display: none;
-  padding: 5% 5%;
+  padding: 5% 5% 5% 10%;
   height: 500px;
   overflow-y: auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none; 
+  scroll-behavior: smooth;
 }
 
 
@@ -199,7 +176,7 @@ color: var(--green-1);
 
 @media only screen and (max-width: 992px) {
 
-    .greeting-hello, .username {
+    .greeting-hello, .name-lastname {
       font-size: 28px;
     }
     #vertical-line {
@@ -231,11 +208,11 @@ color: var(--green-1);
     margin: 0;
   }
 
-  .about-mobile, .work-mobile {
+  .about-me, .my-work {
     display: block;
     visibility: visible;
   }
-  .work-mobile{
+  .my-work{
     margin-bottom: 5%;
   }
   .description {

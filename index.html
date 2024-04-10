@@ -30,19 +30,20 @@
             <div class="greeting-rows">
 
                 <p class="greeting-hello"></p> 
-                <p class="username">  </p>  
+                <p class="name-lastname"></p>  
                 <p class="profession"></p>  
             </div>
         
         </div>
 
-                
+ 
+      
 
             <div class="about-work">
-                    <button class="about tablinks" onclick="openTab(event, '#about-me')" style="margin-bottom: 10px;">apie mane
+                    <button  class="about"  style="margin-bottom: 10px;">apie mane
                     </button>
-      
-                    <button class="work tablinks" onclick="openTab(event, '#work')" >mano darbai
+                 
+                    <button class="work"> mano darbai
                     </button>  
                 </div>
  
@@ -50,15 +51,17 @@
 
         
             <div class="social-link" style="font-size:24px">
-
+ 
                 <button id="social" style="font-size:24px">
                     <a href="https://www.linkedin.com/in/audrius-a-859ab451/" target="_blank">
-                    <i  class="fa fa-linkedin"></i></a>
+                    <i  class="fa fa-linkedin"></i>
+                    </a>
                 </button>
                 
                 <button id="social" style="font-size:24px">
                     <a href="https://github.com/A-Audrius?tab=repositories" target="_blank">
-                        <i class="fa fa-github"></i></a>
+                        <i class="fa fa-github"></i>
+                    </a>
                 </button>
 
 
@@ -81,38 +84,40 @@
                  </div>
             </div>
 
+
+
     </div>
 
-   
-
+     
+  
     <!-- RIGHT-SIDE -->
     <div class="right-side">
 
-    
+
           <div id="vertical-line" class="vertical-line">  </div>
 
+       
+
             <div class="description">
-                
-                <div class="about-mobile tabcontent" id="about-me"  style="display: none;"> 
-                    <h3>apie mane</h3>
-                </div>
+                   
+                    <div class="about-me"> 
+                        <a id="about-me" href="#my-work"></a>  
+                        <h3>apie mane</h3>         
+                    </div >
                         <p >Esu pradedantis programuotojas. Mano domėjimosi sritys: 
                             javascript frontend ir wordpress. 
                             <br>
                             Esu atviras darbo pasiūlymams, kur galėčiau prisidėti prie jūsų vystomų projektų,
                             tuo pačiu mokytis ir augti. Jei turite įdomių pasiūlymų, atitinkančių mano įgūdžius
-                             ir patirtį, nedvejodami susisiekite su manimi.
-                            
-                    
-                     
+                            ir patirtį, nedvejodami susisiekite su manimi.
                         </p>
-                
                             <br>
                             <br>
                             <br>
 
-                <div class="work-mobile tabcontent" id="work" style="display: none;">
-                    <h3> mano darbai</h3>
+                <div class="my-work">
+                     <a id="my-work" href="#about-me"></a>
+                    <h3> mano darbai</h3>               
                 </div> 
          
                         <a class="work-link" href="https://a-audrius.github.io/weather-app/" target="_blank">Weather app</a>
@@ -158,12 +163,7 @@
 
 
 
-
-
-
 <script src="script.js"></script>
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
 
 </body>
 

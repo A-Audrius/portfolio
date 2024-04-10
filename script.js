@@ -4,8 +4,8 @@
 
 
   //  TYPEWRITER
-var greeting = 'Sveiki,';
-const username = "aš Audrius Adomavičius";
+const greeting = 'Sveiki,';
+const nameLastname = "aš Audrius Adomavičius";
 const pro = 'frontend wordpress programuotojas';
 var cursor = document.createElement('div');
 
@@ -32,12 +32,12 @@ function typeWriter() {
 let j = 0;
 function typeWriter2() {
   let a = document.querySelector(".flashing");  
-    if ( j < username.length) {
-   document.querySelector(".username").textContent += username.charAt(j) ; 
-   document.querySelector(".username").classList.add('cursor');
+    if ( j < nameLastname.length) {
+   document.querySelector(".name-lastname").textContent += nameLastname.charAt(j) ; 
+   document.querySelector(".name-lastname").classList.add('cursor');
     j++; 
-    if ( j >= username.length) {
-        document.querySelector(".username").classList.remove('cursor');
+    if ( j >= nameLastname.length) {
+        document.querySelector(".name-lastname").classList.remove('cursor');
         typeWriter3();
        }  
 } 
@@ -63,21 +63,18 @@ function typeWriter3() {
 
 
 
+// BUTTON, LINK
+   document.querySelector(".about").onclick = function () {
+     document.querySelector('.about').style.color = "var(--green-2)";
+     document.querySelector('.work').style.color = "var(--green-1)";
+  document.getElementById('my-work').click();
+  }
+document.querySelector(".work").onclick = function () {
+      document.querySelector('.work').style.color = "var(--green-2)";
+     document.querySelector('.about').style.color = "var(--green-1)";
+  document.getElementById('about-me').click();
+  }   
 
-// OPEN CLOSE TAB
-function openTab(evt, aboutWork) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  document.querySelector(aboutWork).style.display = "block";
-  evt.currentTarget.className += " active";
-}
  
 
 
